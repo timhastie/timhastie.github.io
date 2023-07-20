@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body style="font-family: monospace">
+    <div
+      style="
+        position: absolute;
+        color: white;
+        padding: 8px;
+        font-family: monospace;
+        font-size: 14px;
+        user-select: none;
+      "
+    >
+      <span> Score: <span id="scoreEl">0</span></span>
+    </div>
+    <div
+      id="modalEl"
+      style="
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 45%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 16px;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        font-family: monospace;
+        border-radius: 10px;
+      "
+    >
+      <h1>Game Over</h1>
+      <h2>Score: <span id="frontscore"></span></h2>
+      <button
+        id="buttonEl"
+        style="
+          font-family: monospace;
+          border: none;
+          padding: 8px 16px;
+          background-color: blue;
+          color: white;
+          border-radius: 10px;
+          cursor: pointer;
+        "
+      >
+        Restart Game
+      </button>
+    </div>
+    <div
+      id="startEl"
+      style="
+        position: absolute;
+        background-color: white;
+        top: 45%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 16px;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        font-family: monospace;
+        border-radius: 10px;
+      "
+    >
+      <h1>Spaceship Defense</h1>
+      <button
+        id="startButton"
+        style="
+          font-family: monospace;
+          border: none;
+          padding: 8px 16px;
+          background-color: blue;
+          color: white;
+          border-radius: 10px;
+          cursor: pointer;
+        "
+      >
+        Start Game
+      </button>
+    </div>
+    <canvas></canvas>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
